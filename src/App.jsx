@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import myPhoto from './assets/Me1.png';
 /* ---------------- ICON ---------------- */
 
 const ArrowIcon = () => (
@@ -229,7 +229,7 @@ function App() {
             {/* Bagian Foto (Tanpa Frame) */}
             <div className="relative z-10 -mr-10 transition-transform duration-700 group-hover:scale-105">
               <img
-                src="./src/assets/Me1.png"
+                src={myPhoto}
                 alt="Vincent Wijaya"
                 className="w-80 h-auto object-cover mask-fade-right"
                 // Catatan: Jika fotomu punya background, gunakan filter atau CSS mask
